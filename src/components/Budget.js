@@ -41,7 +41,7 @@ export default function Budget({ budget }) {
             value={amount}
             onChange={(e) => setAmount(e.currentTarget.value)}
             type="number"
-            inputmode="numeric"
+            inputMode="numeric"
             step="0.01"
           />
           <button className="update-button">Update</button>

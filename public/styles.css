@@ -155,6 +155,8 @@ input {
   font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .new-transaction-section button:hover,
@@ -204,6 +206,8 @@ select {
   justify-content: center;
   cursor: pointer;
   font-weight: bold;
+  position: absolute;
+  right: 35px;
 }
 
 .new-transaction button:hover,

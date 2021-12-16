@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectBudgets } from './budgetsSlice';
 import Budget from '../../components/Budget';
 
-const Transactions = () => {
+const Budgets = () => {
   const budgets = useSelector(selectBudgets);
   return (
     <ul className='comments-container'>
@@ -12,4 +12,4 @@ const Transactions = () => {
   );
 };
 
-export default Transactions;
+export default Budgets;
