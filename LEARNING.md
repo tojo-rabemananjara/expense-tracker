@@ -2,6 +2,7 @@
 
 ## Refactoring with Redux Toolkit
 
+*   `npm install redux`
 *   `npm install @reduxjs/toolkit`
 *   `npx create-react-app my-app --template redux`
 *   `configureStore(options)`!

@@ -127,9 +127,9 @@ input {
   position: fixed;
   bottom: 0;
   box-sizing: border-box;
-  max-height: 33%;
+  max-height: 38%;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .new-transaction-section label {
@@ -163,6 +163,10 @@ input {
 .new-transaction-section button:focus {
   background-color: #ffffff;
   color: #141c3a;
+}
+.new-transaction-section button:disabled {
+  border: solid 1px #b9bbc4;
+  background-color: #b9bbc4;
 }
 
 select {

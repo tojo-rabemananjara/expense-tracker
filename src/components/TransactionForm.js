@@ -10,7 +10,7 @@ export default function TransactionForm({ categories }) {
   const dispatch = useDispatch();
   const [category, setCategory] = useState(CATEGORIES[0]);
   const [description, setDescription] = useState('');
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,8 +23,10 @@ export default function TransactionForm({ categories }) {
       })
     );
     setDescription('');
-    setAmount(0);
+    setAmount('');
   };
+
+  const noInput = (amount === '' || description === '');
 
   return (
     <section className="new-transaction-section">
@@ -69,7 +71,9 @@ export default function TransactionForm({ categories }) {
           </div>
         </div>
 
-        <button>Add Transaction</button>
+        <button disabled={noInput} className="">
+          Add Transaction
+        </button>
       </form>
     </section>
   );
