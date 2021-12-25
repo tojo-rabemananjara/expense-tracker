@@ -65,7 +65,7 @@ export default function TransactionForm({ categories }) {
               value={amount}
               onChange={(e) => setAmount(e.currentTarget.value)}
               type="number"
-              inputMode="numeric"
+              inputMode="decimal"
               step="0.01"
             />
           </div>

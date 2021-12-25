@@ -41,14 +41,14 @@ export default function Budget({ budget }) {
             value={amount}
             onChange={(e) => setAmount(e.currentTarget.value)}
             type="number"
-            inputMode="numeric"
+            inputMode="decimal"
             step="0.01"
           />
           <button className="update-button">Update</button>
         </form>
       </div>
       <h4 className={`remaining-funds ${fundsRemainingClassName}`}>
-        Funds Remaining: {remainingFunds}
+        Funds Remaining: ${remainingFunds}
       </h4>
     </li>
   );
